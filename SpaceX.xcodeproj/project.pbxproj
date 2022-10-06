@@ -60,9 +60,9 @@
 		F3E3967828EED336000D3AA4 /* SpaceX */ = {
 			isa = PBXGroup;
 			children = (
-				F3E3968D28EED34E000D3AA4 /* RocketModel.swift */,
 				F3E3967928EED336000D3AA4 /* AppDelegate.swift */,
 				F3E3967B28EED336000D3AA4 /* SceneDelegate.swift */,
+				F3E3968D28EED34E000D3AA4 /* RocketModel.swift */,
 				F374282B28EEDCD100F76252 /* RocketLoader.swift */,
 				F3E3967D28EED336000D3AA4 /* ViewController.swift */,
 				F3E3967F28EED336000D3AA4 /* Main.storyboard */,

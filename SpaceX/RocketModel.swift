@@ -8,7 +8,8 @@
 
 import Foundation
 
-// MARK: - RocketModelElement
+// MARK: - CodableRocketModelElement
+
 class RocketModelElement: Codable {
     let height, diameter: Diameter
     let mass: Mass
@@ -261,6 +262,6 @@ class CompositeFairing: Codable {
     }
 }
 
-typealias RocketModel = [RocketModelElement]
+
 
 
