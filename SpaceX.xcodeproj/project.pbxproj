@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F374282C28EEDCD100F76252 /* RocketLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374282B28EEDCD100F76252 /* RocketLoader.swift */; };
 		F3E3967A28EED336000D3AA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3967928EED336000D3AA4 /* AppDelegate.swift */; };
 		F3E3967C28EED336000D3AA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3967B28EED336000D3AA4 /* SceneDelegate.swift */; };
 		F3E3967E28EED336000D3AA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3967D28EED336000D3AA4 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F374282B28EEDCD100F76252 /* RocketLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLoader.swift; sourceTree = "<group>"; };
 		F3E3967628EED336000D3AA4 /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E3967928EED336000D3AA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3E3967B28EED336000D3AA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				F3E3968D28EED34E000D3AA4 /* RocketModel.swift */,
 				F3E3967928EED336000D3AA4 /* AppDelegate.swift */,
 				F3E3967B28EED336000D3AA4 /* SceneDelegate.swift */,
+				F374282B28EEDCD100F76252 /* RocketLoader.swift */,
 				F3E3967D28EED336000D3AA4 /* ViewController.swift */,
 				F3E3967F28EED336000D3AA4 /* Main.storyboard */,
 				F3E3968228EED337000D3AA4 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F374282C28EEDCD100F76252 /* RocketLoader.swift in Sources */,
 				F3E3967E28EED336000D3AA4 /* ViewController.swift in Sources */,
 				F3E3968E28EED34E000D3AA4 /* RocketModel.swift in Sources */,
 				F3E3967A28EED336000D3AA4 /* AppDelegate.swift in Sources */,
