@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         
         LaunchLoader().launchDataLoad { launches in
             self.launches = launches
-            //print(launches)
+            print(launches.count)
         }
         
         
