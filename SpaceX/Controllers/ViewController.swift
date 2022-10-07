@@ -9,27 +9,31 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //MARK: Arrays for recieving data from parsing loaders
+    
     var rockets: [RocketModelElement] = []
     var launches: [LaunchModelElement] = []
     
+
+    
     override func viewDidLoad() {
+       
         super.viewDidLoad()
+        
+    //MARK: Recieving data from parsing loaders through escaping clousers
         
         RocketLoader().rocketDataLoad { rockets in
             self.rockets = rockets
-            print(rockets.count)
+            print("test \(rockets.count)")
             
         }
         
         LaunchLoader().launchDataLoad { launches in
             self.launches = launches
-            print(launches.count)
+            print("test \(launches.count)")
         }
         
-        
     }
-    
-    
-    
+   
 }
 

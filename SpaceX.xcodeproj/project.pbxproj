@@ -65,6 +65,24 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		F3B54A8128F0231A000F968F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3E3967D28EED336000D3AA4 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F3B54A8228F02327000F968F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F3B54A5528EFED21000F968F /* Constants.swift */,
+				F3E3967B28EED336000D3AA4 /* SceneDelegate.swift */,
+				F3E3967928EED336000D3AA4 /* AppDelegate.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		F3E3966D28EED336000D3AA4 = {
 			isa = PBXGroup;
 			children = (
@@ -84,12 +102,10 @@
 		F3E3967828EED336000D3AA4 /* SpaceX */ = {
 			isa = PBXGroup;
 			children = (
+				F3B54A8128F0231A000F968F /* Controllers */,
 				F3B54A5C28EFF0E9000F968F /* Models */,
 				F3B54A5B28EFF0E0000F968F /* Loaders */,
-				F3E3967928EED336000D3AA4 /* AppDelegate.swift */,
-				F3E3967B28EED336000D3AA4 /* SceneDelegate.swift */,
-				F3B54A5528EFED21000F968F /* Constants.swift */,
-				F3E3967D28EED336000D3AA4 /* ViewController.swift */,
+				F3B54A8228F02327000F968F /* Helpers */,
 				F3E3967F28EED336000D3AA4 /* Main.storyboard */,
 				F3E3968228EED337000D3AA4 /* Assets.xcassets */,
 				F3E3968428EED337000D3AA4 /* LaunchScreen.storyboard */,

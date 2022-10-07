@@ -1,14 +1,8 @@
-//
-//  RocketModel.swift
-//  SpaceX
-//
-//  Created by Григорий Душин on 06.10.2022.
-//
 
 
 import Foundation
 
-// MARK: - CodableRocketModelElement
+// MARK: - CodableRocketModel
 
 class RocketModelElement: Codable {
     let height, diameter: Diameter

@@ -1,4 +1,8 @@
 
+import Foundation
+
+// MARK: - CodableLaunchModel
+
 class LaunchModelElement: Codable {
     
     let success: Bool?
