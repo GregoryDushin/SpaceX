@@ -10,20 +10,26 @@ import UIKit
 class ViewController: UIViewController {
     
     var rockets: [RocketModelElement] = []
-
+    var launches: [LaunchModelElement] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         RocketLoader().rocketDataLoad { rockets in
             self.rockets = rockets
             print(rockets.count)
             
         }
-       
+        
+        LaunchLoader().launchDataLoad { launches in
+            self.launches = launches
+            //print(launches)
+        }
+        
+        
     }
     
-   
+    
     
 }
 
