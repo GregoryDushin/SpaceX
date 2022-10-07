@@ -15,13 +15,70 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M76-LS-hON">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="UhF-cF-t9E"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="F7a-3A-7mj"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="b5g-uX-Uv9">
+                                <rect key="frame" x="149" y="786" width="116" height="26"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drH-oj-WpE">
+                                <rect key="frame" x="186.5" y="438" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oji-l8-pbt">
+                                <rect key="frame" x="307.5" y="64" width="86.5" height="31"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Launches"/>
+                                <connections>
+                                    <segue destination="bJC-i8-hzT" kind="show" id="6nt-K5-1sq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oji-l8-pbt" secondAttribute="trailing" constant="20" id="48Q-Cl-N0a"/>
+                            <constraint firstItem="b5g-uX-Uv9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dw6-bS-pXK"/>
+                            <constraint firstItem="drH-oj-WpE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UB9-yu-D46"/>
+                            <constraint firstItem="oji-l8-pbt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jer-wz-atk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b5g-uX-Uv9" secondAttribute="bottom" constant="50" id="mEh-Nl-EDl"/>
+                            <constraint firstItem="drH-oj-WpE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tVv-su-QMZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pageControll" destination="b5g-uX-Uv9" id="xMD-QN-vwC"/>
+                        <outlet property="scrollView" destination="M76-LS-hON" id="Svp-6S-UdY"/>
+                        <outlet property="testLabel" destination="drH-oj-WpE" id="LYt-x7-ZWT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="54"/>
+            <point key="canvasLocation" x="34.782608695652179" y="53.571428571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fSA-Vm-xgY">
+            <objects>
+                <viewController id="bJC-i8-hzT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5sH-yd-uer">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KZf-QO-vMB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8GT-C9-f0o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Upk-Gj-eBS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="867" y="54"/>
         </scene>
     </scenes>
     <resources>
