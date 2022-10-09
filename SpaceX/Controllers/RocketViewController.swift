@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIScrollViewDelegate {
+class RocketViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var testLabel: UILabel!
     @IBOutlet weak var pageControll: UIPageControl!
@@ -20,27 +20,24 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     //MARK: Arrays for recieving data from parsing loaders
     
     var rockets: [RocketModelElement] = []
-    var launches: [LaunchModelElement] = []
+    
 
     
     override func viewDidLoad() {
        
         super.viewDidLoad()
+
+       
         
     //MARK: Recieving data from parsing loaders through escaping clousers
         
         RocketLoader().rocketDataLoad { rockets in
             self.rockets = rockets
-            print("test \(rockets.count)")
-            print(rockets[0].flickrImages.count)
             self.testLabel.text = rockets[0].name
+            self.title = rockets[0].name
             
         }
         
-        LaunchLoader().launchDataLoad { launches in
-            self.launches = launches
-            print("test \(launches.count)")
-        }
         
         //MARK: - PageControll
         
@@ -56,6 +53,17 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollView.contentSize = CGSize(width: (scrollView.frame.size.width * CGFloat(images.count)), height: scrollView.frame.size.height)
         scrollView.delegate = self
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     //MARK: - ScrollView method
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {

@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		AF6B8B56C9273982C16AF730 /* Pods_SpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1A437501E92DE82D5DD993 /* Pods_SpaceX.framework */; };
+		F349CD0028F2E52D00D53CBF /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F349CCFF28F2E52D00D53CBF /* LaunchViewController.swift */; };
+		F349CD0528F2EC6500D53CBF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F349CD0428F2EC6500D53CBF /* CollectionViewCell.swift */; };
 		F374282C28EEDCD100F76252 /* RocketLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374282B28EEDCD100F76252 /* RocketLoader.swift */; };
 		F3B54A5628EFED21000F968F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B54A5528EFED21000F968F /* Constants.swift */; };
 		F3B54A5828EFEE92000F968F /* LaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B54A5728EFEE92000F968F /* LaunchModel.swift */; };
 		F3B54A5A28EFF0D9000F968F /* LaunchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B54A5928EFF0D9000F968F /* LaunchLoader.swift */; };
 		F3E3967A28EED336000D3AA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3967928EED336000D3AA4 /* AppDelegate.swift */; };
 		F3E3967C28EED336000D3AA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3967B28EED336000D3AA4 /* SceneDelegate.swift */; };
-		F3E3967E28EED336000D3AA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3967D28EED336000D3AA4 /* ViewController.swift */; };
+		F3E3967E28EED336000D3AA4 /* RocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3967D28EED336000D3AA4 /* RocketViewController.swift */; };
 		F3E3968128EED336000D3AA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E3967F28EED336000D3AA4 /* Main.storyboard */; };
 		F3E3968328EED337000D3AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E3968228EED337000D3AA4 /* Assets.xcassets */; };
 		F3E3968628EED337000D3AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E3968428EED337000D3AA4 /* LaunchScreen.storyboard */; };
@@ -25,6 +27,8 @@
 		0FF9F7FDAB87FA91F25A27FA /* Pods-SpaceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.debug.xcconfig"; sourceTree = "<group>"; };
 		6D1A437501E92DE82D5DD993 /* Pods_SpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8021D1B594C13D0F5BCFBBD1 /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
+		F349CCFF28F2E52D00D53CBF /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		F349CD0428F2EC6500D53CBF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F374282B28EEDCD100F76252 /* RocketLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLoader.swift; sourceTree = "<group>"; };
 		F3B54A5528EFED21000F968F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F3B54A5728EFEE92000F968F /* LaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModel.swift; sourceTree = "<group>"; };
@@ -32,7 +36,7 @@
 		F3E3967628EED336000D3AA4 /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E3967928EED336000D3AA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3E3967B28EED336000D3AA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3E3967D28EED336000D3AA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3E3967D28EED336000D3AA4 /* RocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewController.swift; sourceTree = "<group>"; };
 		F3E3968028EED336000D3AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3E3968228EED337000D3AA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3E3968528EED337000D3AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,8 +70,15 @@
 				0FF9F7FDAB87FA91F25A27FA /* Pods-SpaceX.debug.xcconfig */,
 				8021D1B594C13D0F5BCFBBD1 /* Pods-SpaceX.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F349CD0328F2EC3C00D53CBF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F349CD0428F2EC6500D53CBF /* CollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		F3B54A5B28EFF0E0000F968F /* Loaders */ = {
@@ -91,7 +102,8 @@
 		F3B54A8128F0231A000F968F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F3E3967D28EED336000D3AA4 /* ViewController.swift */,
+				F3E3967D28EED336000D3AA4 /* RocketViewController.swift */,
+				F349CCFF28F2E52D00D53CBF /* LaunchViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -127,6 +139,7 @@
 		F3E3967828EED336000D3AA4 /* SpaceX */ = {
 			isa = PBXGroup;
 			children = (
+				F349CD0328F2EC3C00D53CBF /* Cells */,
 				F3B54A8128F0231A000F968F /* Controllers */,
 				F3B54A5C28EFF0E9000F968F /* Models */,
 				F3B54A5B28EFF0E0000F968F /* Loaders */,
@@ -254,13 +267,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F349CD0528F2EC6500D53CBF /* CollectionViewCell.swift in Sources */,
 				F374282C28EEDCD100F76252 /* RocketLoader.swift in Sources */,
-				F3E3967E28EED336000D3AA4 /* ViewController.swift in Sources */,
+				F3E3967E28EED336000D3AA4 /* RocketViewController.swift in Sources */,
 				F3E3968E28EED34E000D3AA4 /* RocketModel.swift in Sources */,
 				F3E3967A28EED336000D3AA4 /* AppDelegate.swift in Sources */,
 				F3E3967C28EED336000D3AA4 /* SceneDelegate.swift in Sources */,
 				F3B54A5828EFEE92000F968F /* LaunchModel.swift in Sources */,
 				F3B54A5628EFED21000F968F /* Constants.swift in Sources */,
+				F349CD0028F2E52D00D53CBF /* LaunchViewController.swift in Sources */,
 				F3B54A5A28EFF0D9000F968F /* LaunchLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
