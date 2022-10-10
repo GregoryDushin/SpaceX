@@ -11,7 +11,8 @@ import Foundation
 
 class LaunchLoader {
     
-    func launchDataLoad(completition: @escaping ([LaunchModelElement]) -> Void){
+    func launchDataLoad(id: String , completition: @escaping ([LaunchModelElement]) -> Void){
+        
         
         var launches : [LaunchModelElement] = []
         
@@ -28,7 +29,11 @@ class LaunchLoader {
                 do {
                     let json = try JSONDecoder().decode([LaunchModelElement].self, from: data!)
                     
-                    launches = json
+                    for el in json {
+                        if el.rocket == id {
+                            launches.append(el)
+                        }
+                    }
                     
                     completition(launches)
                     

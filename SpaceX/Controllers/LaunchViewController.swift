@@ -8,19 +8,28 @@
 import UIKit
 
 class LaunchViewController: UIViewController {
-
+    
     @IBOutlet weak var LaunchCollectionView: UICollectionView!
     
     var launches: [LaunchModelElement] = []
+    var id = "5e9d0d95eda69955f709d1eb"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        LaunchLoader().launchDataLoad { launches in
+        
+        LaunchLoader().launchDataLoad(id: id) { launches in
             self.launches = launches
             self.LaunchCollectionView.reloadData()
         }
         
+    }
+    func dateFormatter (utcDate: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        let result = dateFormatter.date(from: utcDate)
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.timeZone = TimeZone(identifier: "UTC")
+        return dateFormatter.string(from: result!)
     }
 }
 
@@ -34,32 +43,36 @@ extension LaunchViewController : UICollectionViewDelegateFlowLayout, UICollectio
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-       
+        
         return launches.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as! CollectionViewCell
         
-          cell.layer.masksToBounds = true
-          cell.layer.cornerRadius = 12
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = 12
+        
         
         
         cell.rocketNameLable.text = launches[indexPath.row].name
+        cell.dateOfLaunchLable.text  = dateFormatter(utcDate: launches[indexPath.row].date_utc)
         
-        cell.dateOfLaunchLable.text  = launches[indexPath.row].date_utc
         
         if launches[indexPath.row].success == true {
             
             cell.isSucsessImage.image = UIImage(named: "true")
+            
         } else {
+            
             cell.isSucsessImage.image = UIImage(named: "false")
+            
         }
         
         return cell
     }
     
-   
+    
     
 }
 

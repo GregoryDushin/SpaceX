@@ -35,6 +35,7 @@ class RocketViewController: UIViewController, UIScrollViewDelegate {
             self.rockets = rockets
             self.testLabel.text = rockets[0].name
             self.title = rockets[0].name
+            print(rockets[0])
             
         }
         
