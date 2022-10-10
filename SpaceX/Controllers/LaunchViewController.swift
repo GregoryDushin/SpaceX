@@ -12,7 +12,7 @@ class LaunchViewController: UIViewController {
     @IBOutlet weak var LaunchCollectionView: UICollectionView!
     
     var launches: [LaunchModelElement] = []
-    var id = "5e9d0d95eda69955f709d1eb"
+    var id = "5e9d0d95eda69955f709d1eb"   //just for testing (falcon 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,8 +52,6 @@ extension LaunchViewController : UICollectionViewDelegateFlowLayout, UICollectio
         
         cell.layer.masksToBounds = true
         cell.layer.cornerRadius = 12
-        
-        
         
         cell.rocketNameLable.text = launches[indexPath.row].name
         cell.dateOfLaunchLable.text  = dateFormatter(utcDate: launches[indexPath.row].date_utc)
