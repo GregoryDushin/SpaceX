@@ -75,7 +75,7 @@ class Diameter: Codable {
 }
 
 
-// MARK: - Engines
+// Engines
 class Engines: Codable {
     let isp: ISP
     let thrustSeaLevel, thrustVacuum: Thrust
