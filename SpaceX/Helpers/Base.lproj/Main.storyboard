@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Rocket-->
+        <!--Rocket View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="RocketViewController" customModule="SpaceX" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,7 +71,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b5g-uX-Uv9" secondAttribute="bottom" constant="50" id="mEh-Nl-EDl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Rocket" id="qCv-cS-vkF"/>
+                    <navigationItem key="navigationItem" id="qCv-cS-vkF"/>
                     <connections>
                         <outlet property="pageControll" destination="b5g-uX-Uv9" id="xMD-QN-vwC"/>
                         <outlet property="scrollView" destination="M76-LS-hON" id="Svp-6S-UdY"/>

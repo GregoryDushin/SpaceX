@@ -20,22 +20,15 @@ class RocketViewController: UIViewController, UIScrollViewDelegate {
     //MARK: Arrays for recieving data from parsing loaders
     
     var rockets: [RocketModelElement] = []
-    
-
-    
     override func viewDidLoad() {
        
         super.viewDidLoad()
 
-       
-        
     //MARK: Recieving data from parsing loaders through escaping clousers
         
         RocketLoader().rocketDataLoad { rockets in
             self.rockets = rockets
             self.testLabel.text = rockets[0].name
-            self.title = rockets[0].name
-            print(rockets[0])
             
         }
         
@@ -68,7 +61,7 @@ class RocketViewController: UIViewController, UIScrollViewDelegate {
     //MARK: - ScrollView method
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        var pageNumber = scrollView.contentOffset.x / scrollView.frame.size.width
+        let pageNumber = scrollView.contentOffset.x / scrollView.frame.size.width
         pageControll.currentPage = Int(pageNumber)
     }
 
